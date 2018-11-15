@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from '../Card/Card';
+import './CardContainer.css'
 
 export const CardContainer = (props) => {
   
@@ -8,7 +9,7 @@ export const CardContainer = (props) => {
   }
 
   return (
-    <section>
+    <section className="CardContainer">
       {displayCards()}
     </section>
   )
