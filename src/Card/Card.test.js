@@ -4,7 +4,9 @@ import Card from './Card';
 
 
 describe('Card', () => {
+
   let wrapper;
+
   let mockPhoto = {
     image: 'image',
     date: 'date',
@@ -12,6 +14,7 @@ describe('Card', () => {
     camera: 'camera',
     id: 1
   }
+  
   beforeEach(() => {
     wrapper = shallow(<Card photo={mockPhoto} />)
   })
