@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { apiKey } from './keys';
 import { nasaCleaner } from './utils/helper';
+import { CardContainer } from './CardContainer/CardContainer';
 
 class App extends Component {
   constructor() {
@@ -24,7 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        App
+        <CardContainer photos={ this.state.photos } />
       </div>
     );
   }
