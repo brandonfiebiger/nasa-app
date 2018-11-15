@@ -14,3 +14,5 @@ export const CardContainer = (props) => {
     </section>
   )
 }
+
+export default CardContainer;
