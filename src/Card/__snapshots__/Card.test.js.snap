@@ -24,13 +24,14 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": undefined,
+    "key": "1",
     "nodeType": "host",
     "props": Object {
       "children": <img
         src="image"
       />,
       "className": "Card",
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": Object {
@@ -49,13 +50,14 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": undefined,
+      "key": "1",
       "nodeType": "host",
       "props": Object {
         "children": <img
           src="image"
         />,
         "className": "Card",
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": Object {
