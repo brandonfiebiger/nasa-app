@@ -14,7 +14,7 @@ describe('Card', () => {
     camera: 'camera',
     id: 1
   }
-  
+
   beforeEach(() => {
     wrapper = shallow(<Card photo={mockPhoto} />)
   })
@@ -22,5 +22,11 @@ describe('Card', () => {
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
+  })
+
+  it('should change its toggled state when handleToggle is called', () => {
+    expect(wrapper.state('toggled')).toEqual(false);
+    wrapper.instance().handleToggle();
+    expect(wrapper.state('toggled')).toEqual(true);
   })
 })
