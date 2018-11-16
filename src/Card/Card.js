@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Card.css';
+import Info from '../Info/Info';
 
 export class Card extends Component {
   constructor(props) {
@@ -10,14 +11,20 @@ export class Card extends Component {
     }
   }
 
+  handleToggle = () => {
+    this.setState({
+      toggled: !this.state.toggled
+    })
+  }
+
 
   render() {
-
+    const { toggled } = this.state;
     const { image, date, id, rover, camera } = this.props.photo;
 
     return(
-      <div className="Card">
-        <img src={image} />
+      <div className="Card" onClick={this.handleToggle} key={id}>
+        {toggled ? <Info date={date} rover={rover} camera={camera} id={id} key={id}/>: <img src={image} />}
       </div>
     )
   }
