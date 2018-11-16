@@ -1,0 +1,7 @@
+.CardContainer {
+  height: 100vh;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}

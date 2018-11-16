@@ -1,14 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
 import { shallow } from 'enzyme';
+import CardContainer from './CardContainer';
 
-describe('App', () => {
+describe('CardContainer', () => {
 
   let wrapper;
 
+  let photos = [
+    'photo1', 
+    'photo2'
+  ]
+
   beforeEach(() => {
-    wrapper = shallow(<App />)
+    wrapper = shallow(<CardContainer photos={photos}/>)
   })
 
   it('should match the snapshot', () => {
