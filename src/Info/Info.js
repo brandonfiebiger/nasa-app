@@ -3,7 +3,6 @@ import React from 'react';
 
 export const Info = (props) => {
 
-  console.log(props.rover, props.camera)
   return(
     <div>
       <h1>{props.date}</h1>
